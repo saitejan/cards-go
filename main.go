@@ -3,8 +3,7 @@ package main
 func main() {
 
 	card := newDeck()
-	a, b := deal(card, 5)
-	a.print()
-	b.print()
-
+	card.saveToFile("sai.txt")
+	cc := deckFromFile("sai.txt")
+	cc.print()
 }
